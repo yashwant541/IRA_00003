@@ -1,0 +1,13 @@
+Label	For Wealth Lending	For Wealth Lending - Retail Banking	For Wealth Lending - PvB
+1a.Asset Growth Year on Year as %	Sum of both the Retail Banking and PvB	ENR Table - fetched for Wealth Lending Product - the original values like before.	ENR Table - fetched for Product - PvB or Private Banking or PVB.
+1bi.QoQ Deterioration in 30+DPD$% in Current Month	Same as before	Same as before	Empty Value or No value
+1bii.QoQ Deterioration in 30+DPD$% in Prior Month	Same as before	Same as before	Empty Value or No value
+1c. YoY Deterioration in 30+ DPD$%	Same as before	Same as before	Empty Value or No value
+1d. Proportion of Exposure in Early Alert (EA)	Same as before	Empty Value or No value	Process same but only using PvB table for this.
+1e. Proportion of Exposure in Collection (AWC)	Same as before	Empty Value or No value	Process same but only using PvB table for this.
+1f. Proportion of Exposure in Shortfall Status	Empty for now - will update the formula later.	Empty Value or No value	Empty for now - will update the formula later.
+1g.Last 12 Months Policy Exceptions rate	Same as before	Same as before	Same as before
+1h.Active Dispensations on SME Lending	Same as before	Same as before	Same as before
+2a.Country Risk - Outlook	Same as before	Same as before	Same as before
+2b.Country Risk - Grading	Same as before	Same as before	Same as before
+Calculated Inherent Credit Risk Assessment:	Computation same as before.	Computation same as before - but in formular - ignore the empty values.	Computation same as before - but in formular - ignore the empty values.

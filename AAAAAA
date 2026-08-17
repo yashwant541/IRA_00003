@@ -1,0 +1,78 @@
+We want to add some changes -
+
+1) We want to segregate and add - two more Wealth Lending - Segments or Products - which is Private Banking or PVB or PvB
+and Retail Banking.
+
+We will check for 
+
+For Private Banking - which countries are available - for Private Banking. So we will check which countries are in wealth lending and we will check which countries are matching wealth lending and the PvB tables - Which are PvB EA and PvB AWC tables. So PvB will be found in ENR, PvB EA and PvB AWC. So we will prepare these tables for Wealth lending - PvB.
+
+Now we already have the Wealth Lending Tables from before. So in the Wealth Lending - We have three outputs now - one for Wealth Lending, And then one for Wealth Lending - Retail Banking and then Wealth Lending Private Banking.
+
+So - what we do is - 
+
+a) Check what countries - are in Wealth Lending - assuming they are in list A.
+b) Check what countries are in Wealth Lending - PvB - assuming they are in list B. And these countries in B are also in A.
+
+What tables will be effected -
+
+ENR Tables, PvB EA and PvB AWC. Since we have PvB in only these cases - therefore - all the calculations involving ENR Tables, AWC and EA Tables will be first prepared for PvB based on the extracted values and then added to the Wealth lending original tables - only affecting ENR, EA and AWC.
+
+"Basically Retail Banking + PvB values = Wealth Lending."
+
+So if some label was using ENR - We will add the PvB ENR values and prepare ENR for Wealth Lending.
+
+So all the tables labelled for Wealth Lending - are basically for Retail Lending as well Wealth Lending. And then for the countries in PvB - we will have the values calculated by adding the ENR for those countries - for final Wealth Lending values for example - this table below for ENR - we used to build tables for four products - now we will build for additional Wealth Lending - PvB from the ENR Table - where we already know the countries for PvB.
+
+So once we build the ENR for PvB -
+
+Now we have the table ENR - for Wealth lending (calling this A) as well as PvB (Calling this B) - we build two tables from this - one is normal Wealth Lending like before - and then we build another which is Wealth Lending + PvB - adding values for the PvB countries meanwhile all the non PvB countries values remain same.
+
+Now YOY % for the normal Wealth Lending which is A-> becomes the values for Wealth Lending - Retail Banking
+YOY % for the PvB only table which is B -> becomes the values for Wealth Lending - PvB 
+YOY% for Wealth Lending + PvB which is A+B -> becomes for the total Wealth Lending table.
+
+Similarly for PvB - Label 1d and 1e -> We will get the values from PvB only tables.
+
+For retail banking - labels 1d, 1e and 1f - Values will be empty and Risk Rating will be not applicable. And even 1i Credit Risk Appetite breaches will be empty and not applicable.
+
+
+For PvB - Only 1a, 1d, 1e will be different than the Wealth Lending and Wealth Lending - Retail Banking.
+
+
+Check this table for better understanding -
+
+Label	For Wealth Lending	For Wealth Lending - Retail Banking	For Wealth Lending - PvB
+1a.Asset Growth Year on Year as %	Sum of both the Retail Banking and PvB	ENR Table - fetched for Wealth Lending Product - the original values like before.	ENR Table - fetched for Product - PvB or Private Banking or PVB.
+1bi.QoQ Deterioration in 30+DPD$% in Current Month	Same as before	Same as before	Empty Value or No value
+1bii.QoQ Deterioration in 30+DPD$% in Prior Month	Same as before	Same as before	Empty Value or No value
+1c. YoY Deterioration in 30+ DPD$%	Same as before	Same as before	Empty Value or No value
+1d. Proportion of Exposure in Early Alert (EA)	Same as before	Empty Value or No value	Process same but only using PvB table for this.
+1e. Proportion of Exposure in Collection (AWC)	Same as before	Empty Value or No value	Process same but only using PvB table for this.
+1f. Proportion of Exposure in Shortfall Status	Empty for now - will update the formula later.	Empty Value or No value	Empty for now - will update the formula later.
+1g.Last 12 Months Policy Exceptions rate	Same as before	Same as before	Same as before
+1h.Active Dispensations on SME Lending	Same as before	Same as before	Same as before
+2a.Country Risk - Outlook	Same as before	Same as before	Same as before
+2b.Country Risk - Grading	Same as before	Same as before	Same as before
+Calculated Inherent Credit Risk Assessment:	Computation same as before.	Computation same as before - but in formular - ignore the empty values.	Computation same as before - but in formular - ignore the empty values.
+
+
+These are all the new labels now - for all the Wealth Lending, Wealth Lending - Retail Banking, and Wealth Lending - PvB. 1e and 1f from before will move to 1d and 1e, And 1f Shortfall was added.
+
+1a.Asset Growth Year on Year as %
+1bi.QoQ Deterioration in 30+DPD$% in Current Month
+1bii.QoQ Deterioration in 30+DPD$% in Prior Month
+1c. YoY Deterioration in 30+ DPD$%
+1d. Proportion of Exposure in Early Alert (EA)
+1e. Proportion of Exposure in Collection (AWC)
+1f. Proportion of Exposure in Shortfall Status
+1g.Last 12 Months Policy Exceptions rate
+1h.Active Dispensations on SME Lending
+2a.Country Risk - Outlook
+2b.Country Risk - Grading
+Calculated Inherent Credit Risk Assessment:
+
+
+1bi, 1bii, 1c will be put as Not applicable. - We won't calculate them - For the others - we will look for the same tables like Wealth Lending.
+
+
